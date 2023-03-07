@@ -6,11 +6,11 @@ public class CountExactCharOfString {
 
     public static void main(String[] args) {
         String string = "Работать нужно не 12 часов, а головой!";
-        final char c = 'в';
+        final char symbol = 'в';
 
         int charCounter = 0;
         for (char currentChar : string.toCharArray()) {
-            if (currentChar == c) {
+            if (currentChar == symbol) {
                 charCounter++;
             }
         }
@@ -26,7 +26,7 @@ public class CountExactCharOfString {
         System.out.println("С помощью replace символ \"в\" встречается: " + occurrencesCount + " раз/а.");
 
         String testThirdWayString = "Работать нужно не 12 часов, а головой";
-        long count = testThirdWayString.chars().filter(ch -> ch == 'в').count();
+        long count = testThirdWayString.chars().filter(element -> element == 'в').count();
         System.out.println("С помощью chars символ \"в\" встречается: " + count + " раз/а.");
     }
 }

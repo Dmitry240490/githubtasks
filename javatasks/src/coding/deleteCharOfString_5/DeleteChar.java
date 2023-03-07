@@ -5,7 +5,8 @@ public class DeleteChar {
 
     public static void main(String[] args) {
         String string = "Работать нужно не 12 часов, а головой!";
-        String newString = removeChar(string, '!');
+        char charToRemove = '!';
+        String newString = removeChar(string, charToRemove);
         System.out.println(newString);
     }
 

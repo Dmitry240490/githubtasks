@@ -9,7 +9,6 @@ public class Fibonacci {
     public static void main(String[] args) {
         int k = 11;
         int[] numbers = new int[k];
-        numbers[0] = 0;
         numbers[1] = 1;
         numbers[2] = 1;
         for (int i = 3; i < numbers.length; i++) {

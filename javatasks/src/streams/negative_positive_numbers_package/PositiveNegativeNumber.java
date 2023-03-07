@@ -17,7 +17,7 @@ public class PositiveNegativeNumber {
         System.out.println(integerList);
 
         List<Integer> resultList = integerList.stream()
-                .map(integer -> Math.abs(integer))
+                .map(Math::abs)
                 .collect(Collectors.toList());
         System.out.println(resultList);
     }

@@ -5,8 +5,11 @@ package coding.replaceCharOfString_4;
 public class ReplaceChar {
 
     public static void main(String[] args) {
-        String s = replaceCharOfString("Неуд*ч* – это просто возможность н*ч*ть снов*, но уже более мудро.",
-                '*', 'а');
+        String string = "Неуд*ч* – это просто возможность н*ч*ть снов*, но уже более мудро.";
+        char oldChar = '*';
+        char newChar = 'a';
+
+        String s = replaceCharOfString(string, oldChar, newChar);
         System.out.println(s);
     }
 

@@ -4,11 +4,12 @@ package coding.isStringPalindrom_8;
 public class IsStringPalindrome {
 
     public static void main(String[] args) {
-        System.out.println(isStringPalindrome());
+        String string = "Аргентина манит негра";
+        System.out.println(isStringPalindrome(string));
     }
 
-    private static boolean isStringPalindrome() {
-        char[] chars = "Аргентина манит негра".toCharArray();
+    private static boolean isStringPalindrome(String string) {
+        char[] chars = string.toLowerCase().toCharArray();
         int leftCounter = 0;
         int rightCounter = chars.length - 1;
         while (leftCounter < rightCounter) {

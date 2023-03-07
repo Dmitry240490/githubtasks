@@ -32,19 +32,23 @@ public class Algorithm {
             }
         }
 
-        if (inputNumber < 0)
+        if (inputNumber < 0) {
             System.out.println("Отрицательное число! Невозможно вывести факториал данного числа!");
-        if (inputNumber == 0)
-            System.out.println("Ноль!");
-        if (inputNumber % 2 == 0)
+        }
+        if (inputNumber == 0) {
+            System.out.println("Ноль! ");
+        }
+        if (inputNumber % 2 == 0) {
             System.out.println("Четное число");
-        if (!(inputNumber % 2 == 0))
+            if (inputNumber % 10 == 0) {
+                System.out.println("Число делится на 10! " + "Вывод 1/10 данного числа: " + (inputNumber / 10));
+            }
+        } else {
             System.out.println("Нечетное число");
-        if (inputNumber % 10 == 0)
-            System.out.println("Число делится на 10! " + "Вывод 1/10 данного числа: " + (inputNumber / 10));
+        }
         if (inputNumber % 3 == 0) {
             result = getFactorial(inputNumber);
-            System.out.println("Число делится на 3, факториал данного числа " + inputNumber + " is " + result + ".");
+            System.out.println("Число делится на 3, факториал данного числа " + inputNumber + " is " + result);
         }
     }
 
